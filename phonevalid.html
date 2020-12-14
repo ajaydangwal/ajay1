@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+function validateForm() {
+  var y = document.forms["myForm"]["fname"].value;
+  if (y == "" ) {
+    alert("Mobile number not should be blank");
+    return false;
+              }
+              var h = document.forms["myForm"]["fname"].value;
+  if (h.length < 10 ) {
+    alert("Mobile Length Less 10 Digit");
+    return false;
+              }
+              var z = document.forms["myForm"]["fname"].value;
+  if (z.length > 10 ) {
+    alert("Mobile Length Greater from 10 Digit");
+    return false;
+              }
+              var t = document.forms["myForm"]["fname"].value;
+              if (isNaN(t)) {
+    alert("USE only number value not char");
+    return false;
+              }
+  
+  }
+</script>
+</head>
+<body>
+<form name="myForm" action="" onsubmit="validateForm()" method="post">
+  Name: <input type="text" name="fname" placeholder="enter the ema">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+    
